@@ -40,6 +40,8 @@ instructions here are split out by platform:
 * Others - there are some other Python library dependencies. Run `make
   builddeb` to create a `.deb` package, then install it with `dpkg -i
   mydeb.deb`. This will prompt you regarding any missing dependencies.
+ 
+* If `make builddeb` gives trouble, install in a virtualenv and activate when you need it. Assuming you have virtualenv and virtualenvwrapper run `mkvirtualenv --python=/usr/bin/python3 email2pdf_env` then from within the email2pdf folder `python3 setup.py install`. You just need to activate the new virtualenv with `workon email2pdf_env` and switch it off when you're finished with `deactivate`
 
 ### OS X
 
